@@ -26,7 +26,7 @@ class Collection
          * @var Forwarder $forwarder
          */
         foreach ($this->forwarders as $forwarder) {
-            $data = $forwarder->forward($data);
+            $forwarder->forward($data);
         }
     }
 } 
